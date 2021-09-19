@@ -1,0 +1,202 @@
+
+header{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 15px;
+  /* background-color:#1d1b1b; */
+}
+
+button{
+  width: 150px;
+  height: 50px;
+  font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  color: white;
+  text-decoration: none;
+  padding: 5px 25px;
+  background-color:#1f2833;
+  cursor: pointer;
+  transition: all 0.3s ease 0s;
+  border-color: #66fcf1;
+  /* border-radius: 50px; */
+}
+
+button:hover{
+  background-color:#66fcf1;
+  color: black;
+}
+
+h2{
+  color:#66fcf1;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-size: 3rem;
+  font-weight: 200px;
+  text-shadow:rgba(0, 0, 0, 0.383);
+  margin: 1rem;
+}
+
+.grid{
+/* background-color:rgba(0, 0, 0, 0.904) !important; */
+background-color: #0b0c10;
+/* background-image: linear-gradient(to right,#66fcf1,#16181a); */
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 100px;
+  padding: 10px 50px;
+}
+
+
+
+.container .card 
+{
+    position:relative;
+    width:300px;
+    height:400px;
+    background:rgba(255,255,255,0.05);
+    margin:20px;
+    box-shadow: 0 15px 35px rgba(0,0,0,0.2);
+    border-radius: 15px;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    border-top:1px solid rgba(255,255,255,0.5); 
+    border-left:1px solid rgba(255,255,255,0.5);
+    backdrop-filter: blur(15px);
+}
+.container .card .content 
+{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    /* opacity: 0.5; */
+    transition: 0.5s;
+}
+.container .card:hover .content
+{
+    color:#66fcf1;
+
+}
+.container .card .content .imgbx
+{
+    position: relative;
+    width: 150px;
+    height:150px;
+    border-radius: 50%;
+    overflow: hidden;
+    border:10px solid rgba(3, 45, 58, 0.26);
+}
+.container .card .content .imgbx img 
+{
+    position: absolute;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    border-radius: 50%;
+    object-fit: cover;
+}
+.name{
+    color:whitesmoke;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-weight: 500;
+    font-size: 16px;
+    text-align: center;
+    margin: 20px 0 10px;
+    line-height: 1.1em;
+
+}
+p{
+  color:whitesmoke;
+  letter-spacing: 2px;
+    font-weight: 500;
+    font-size: 16px;
+    text-align: center;
+    margin: 20px 0 10px;
+    line-height: 1.1em;
+}
+.container .card .layer
+{
+  position: absolute;
+  top:0;
+  left:0;
+  width: 100%;
+  height: 100%;
+  z-index:-1;
+  border-radius: 15px;
+  transition: 0.5s;
+}
+.container .card:hover .layer
+{
+  top:0;
+  background-image: linear-gradient(#43cea2,#185a9d);
+  transition: 0.5s ease-out;
+  
+
+}
+.container .card .content .content-box h3 span{
+  color:whitesmoke;
+    font-size: 12px;
+    font-weight: 300;
+    text-transform: initial;
+}
+.container .card .sci 
+{
+position: absolute;
+bottom: 15px;
+display: flex;
+
+
+}
+.container .card .sci .btn{
+  margin:0px 10px;
+  transform: translateY(40px);
+    transition: 0.3s;
+    transition-delay: calc(0.1s *2);
+    visibility: hidden;
+
+}
+  
+
+.container .card:hover .sci .btn
+{
+  transform: translateY(0px);
+  visibility: visible;
+}
+.container .card .sci a
+{
+color:#fff;
+font-size: 24px;
+justify-content:space-between;
+padding: 10px;
+}
+.container .card .sci a:hover
+{
+  color:rgb(0, 0, 0);
+} 
+body
+{
+background-image:url("https://cdn2.vectorstock.com/i/1000x1000/19/71/polygonal-background-blue-green-brown-black-vector-21441971.jpg");
+background-position: top;
+/* background-repeat: no-repeat; */
+}
+section
+{
+  /* color: rgb(99, 77, 77); */
+  display: inline;
+  text-align: center;
+  font-size: 36px;
+  position: relative;
+  padding-top: 50px;
+  text-shadow: 2px 2px 5px #66fcf1;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  color:rgb(8, 20, 24);
+  border: none;
+}
+
+
+
